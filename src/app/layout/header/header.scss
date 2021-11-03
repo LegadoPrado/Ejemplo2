@@ -1,0 +1,36 @@
+$nav-color: rgba(0, 0, 0, 0.829);
+$text-color: white;
+
+.nav {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: $nav-color;
+  color: $text-color;
+  justify-content: space-between;
+  .nav-item {
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(172, 172, 172);
+  }
+
+  .nav-item.brand,
+  .nav-item.user {
+    justify-content: center;
+    width: 30%;
+    font-size: 1.3rem;
+  }
+
+  .nav-item.brand {
+    font-weight: bold;
+  }
+
+  .nav-item.user,
+  .nav-item.brand {
+    span {
+      cursor: pointer;
+    }
+  }
+}
